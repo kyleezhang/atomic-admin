@@ -24,12 +24,12 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lerna run --concurrency 1 --stream precommit --since HEAD",
+            "pre-commit": "lerna run --concurrency 1 --stream pre-commit --since HEAD",
             "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
     },
     "license": "MIT",
     "engines": {
-        "node": ">=10.0.0"
+        "node": ">=12.0.0"
     }
 }

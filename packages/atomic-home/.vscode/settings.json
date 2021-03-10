@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "volar.format.formatter": "workspaceExtensions",
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 设置默认格式化工具为prettier
+  "vetur.experimental.templateInterpolationService": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
+}
