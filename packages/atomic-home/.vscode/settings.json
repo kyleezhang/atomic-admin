@@ -3,6 +3,7 @@
   "volar.format.formatter": "workspaceExtensions",
   "editor.defaultFormatter": "esbenp.prettier-vscode", // 设置默认格式化工具为prettier
   "vetur.experimental.templateInterpolationService": true,
+  "deno.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   }

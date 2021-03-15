@@ -1,25 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <router-view></router-view>
 </template>
 
-<script lang="ts" setup>
-import HelloWorld from "@/components/HelloWorld.vue";
-
-fetch("/api/users")
-  .then(res => res.json())
-  .then(data => {
-    console.log(data);
-  });
+<script lang="ts">
+export default {
+  name: "App",
+  setup(): any {
+    return {};
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
