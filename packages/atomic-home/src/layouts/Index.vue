@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import SideBar from "./components/side-bar/Index.vue";
-import NavBar from "./components/NavBar.vue";
+import NavBar from "./components/nav-bar/Index.vue";
 import AppMain from "./components/AppMain.vue";
 export default {
   name: "Layout",
@@ -26,16 +26,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "styles/mixin.scss";
-@import "styles/variables.module.scss";
-
 .app-wrapper {
   @include clearfix;
   width: 100%;
-  height: 100%;
-}
-.sidebar-container {
-  float: left;
-  width: $sideBarWidth;
   height: 100%;
 }
 </style>

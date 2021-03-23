@@ -3,11 +3,41 @@ import lang from "element-plus/lib/locale/lang/zh-cn";
 import locale from "element-plus/lib/locale";
 import { App } from "vue";
 
-import { ElButton, ElLoading, ElMenu, ElSubmenu, ElMenuItemGroup, ElMenuItem, ElMessage, ElMessageBox, ElNotification, ElScrollbar } from "element-plus";
+import {
+  ElButton,
+  ElLoading,
+  ElMenu,
+  ElSubmenu,
+  ElMenuItemGroup,
+  ElMenuItem,
+  ElMessage,
+  ElMessageBox,
+  ElNotification,
+  ElScrollbar,
+  ElBadge,
+  ElDropdown,
+  ElDropdownItem,
+  ElDropdownMenu,
+  ElBreadcrumb,
+  ElBreadcrumbItem,
+} from "element-plus";
 
 const plugins = [ElLoading, ElMessage, ElMessageBox, ElNotification];
 
-const components = [ElButton, ElMenu, ElSubmenu, ElMenuItemGroup, ElMenuItem, ElScrollbar];
+const components = [
+  ElButton,
+  ElMenu,
+  ElSubmenu,
+  ElMenuItemGroup,
+  ElMenuItem,
+  ElScrollbar,
+  ElBadge,
+  ElDropdown,
+  ElDropdownItem,
+  ElDropdownMenu,
+  ElBreadcrumb,
+  ElBreadcrumbItem,
+];
 
 locale.use(lang);
 
