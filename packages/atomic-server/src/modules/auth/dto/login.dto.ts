@@ -1,17 +1,13 @@
-import { IsString, Matches, IsEmail, IsNotEmpty } from 'class-validator';
+import { IsNotEmpty, IsString, Matches } from 'class-validator';
 
 // 用户注册信息
-export class RegisterInfoDto {
-  @IsString()
+export class LoginInfoDto {
   @IsNotEmpty()
+  @IsString()
   account: string;
 
-  @IsEmail()
   @IsNotEmpty()
-  email: string;
-
   @IsString()
-  @IsNotEmpty()
   @Matches(
     /^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,30}$/g,
     {
