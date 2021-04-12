@@ -1,12 +1,13 @@
-import { IsNotEmpty, IsString, Matches } from 'class-validator';
+import { IsString, Matches } from 'class-validator';
+import { ApiProperty } from '@nestjs/swagger';
 
 // 用户注册信息
 export class LoginInfoDto {
-  @IsNotEmpty()
+  @ApiProperty()
   @IsString()
   account: string;
 
-  @IsNotEmpty()
+  @ApiProperty()
   @IsString()
   @Matches(
     /^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,30}$/g,

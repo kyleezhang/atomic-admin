@@ -1,9 +1,9 @@
-import { Module, MiddlewareConsumer } from '@nestjs/common';
-import { LoggerMiddleware } from './shared/middlewares/logger.middleware';
+import * as path from 'path';
+import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 import { AuthModule } from './modules/auth/auth.module';
 import { ConfigModule, ConfigService } from 'nestjs-config';
 import { SequelizeModule } from '@nestjs/sequelize';
-import * as path from 'path';
+import { LoggerMiddleware } from '@/shared/middlewares/logger.middleware';
 
 @Module({
   imports: [
@@ -12,7 +12,6 @@ import * as path from 'path';
     ),
     SequelizeModule.forRootAsync({
       useFactory: (config: ConfigService) => {
-        console.log(config.get('database'));
         return config.get('database');
       },
       inject: [ConfigService],
@@ -20,8 +19,8 @@ import * as path from 'path';
     AuthModule,
   ],
 })
-export class AppModule {
+export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(LoggerMiddleware);
+    consumer.apply(LoggerMiddleware).forRoutes('users');
   }
 }
