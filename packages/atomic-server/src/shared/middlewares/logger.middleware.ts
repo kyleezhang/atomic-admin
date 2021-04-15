@@ -7,7 +7,6 @@ import { Logger } from '../utils/log4js';
 export class LoggerMiddleware implements NestMiddleware {
   use(req: Request, res: Response, next: () => void) {
     const code = res.statusCode;
-    console.log('hhhhhhhhh');
     next();
     // 组装日志信息
     const logFormat = `
@@ -19,7 +18,6 @@ export class LoggerMiddleware implements NestMiddleware {
       Query: ${JSON.stringify(req.query)}
       Body: ${JSON.stringify(req.body)}
     `;
-    console.log(logFormat, 'hello');
     // 根据状态码进行日志类型的区分
     if (code >= 500) {
       Logger.error(logFormat);

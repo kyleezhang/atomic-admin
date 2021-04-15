@@ -6,6 +6,7 @@ import {
   HttpException,
   HttpStatus,
 } from '@nestjs/common';
+import { Logger } from '@/shared/utils/log4js';
 import { ErrorTypes } from '../constants/error-type';
 
 @Catch()
@@ -47,7 +48,7 @@ export class ExceptionsFilter implements ExceptionFilter {
       stack,
     };
 
-    console.error(errorInfo);
+    Logger.error(errorInfo);
 
     // response 返回
     response.status(status).json({

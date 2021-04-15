@@ -111,7 +111,6 @@ export class Logger {
   }
 
   static info(...args) {
-    console.log(1111111);
     logger.info(Logger.getStackTrace(), ...args);
   }
 
