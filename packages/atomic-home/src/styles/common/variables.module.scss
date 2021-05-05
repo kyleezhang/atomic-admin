@@ -9,7 +9,7 @@ $subMenuBg: #1f2d3d;
 $subMenuHover: #001528;
 
 $sideBarWidth: 210px;
-$navBarHeight: 46px;
+$navBarHeight: 56px;
 
 :export {
   menuText: $menuText;
@@ -18,6 +18,8 @@ $navBarHeight: 46px;
   menuBg: $menuBg;
   menuHover: $menuHover;
   subMenuBg: $subMenuBg;
+  sideBarWidth: $sideBarWidth;
+  navBarHeight: $navBarHeight;
   subMenuHover: $subMenuHover;
   navBarHeight: $navBarHeight;
 }

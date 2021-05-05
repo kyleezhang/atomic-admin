@@ -44,5 +44,4 @@ export default {
     };
   },
 };
-// type是一个计算属性
 </script>

@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "styles/variables.module.scss";
+@import "styles/common/variables.module.scss";
 .navbar {
   height: $navBarHeight;
   border-bottom: 1px solid #c7c4c4;
