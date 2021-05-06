@@ -14,7 +14,8 @@
       "@/*": ["./src/*"],
       "styles/*": ["./src/styles/*"],
       "views/*": ["./src/views/*"],
-      "comps/*": ["./src/components/*"]
+      "comps/*": ["./src/components/*"],
+      "icons/*": ["./src/icons/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],

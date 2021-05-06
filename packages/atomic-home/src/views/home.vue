@@ -6,6 +6,7 @@
       <h1>张昊大笨蛋</h1>
     </template>
   </card>
+  <svg-icon name="list" style="width: 32px; height: 32px"></svg-icon>
 </template>
 
 <script lang="ts">
